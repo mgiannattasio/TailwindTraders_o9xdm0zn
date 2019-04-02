@@ -3,6 +3,9 @@ using Android.App;
 using Android.Content.PM;
 using Android.OS;
 using CarouselView.FormsPlugin.Android;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 using Plugin.CurrentActivity;
 using Plugin.XSnack;
 using Sharpnado.Presentation.Forms.Droid;
@@ -11,9 +14,6 @@ using TailwindTraders.Mobile.Droid.Helpers;
 using TailwindTraders.Mobile.Features.Scanning;
 using TailwindTraders.Mobile.Features.Scanning.Photo;
 using Xamarin.Forms;
-using Microsoft.AppCenter;
-using Microsoft.AppCenter.Analytics;
-using Microsoft.AppCenter.Crashes;
 
 namespace TailwindTraders.Mobile.Droid
 {
