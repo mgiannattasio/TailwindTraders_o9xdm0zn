@@ -11,6 +11,9 @@ using TailwindTraders.Mobile.Droid.Helpers;
 using TailwindTraders.Mobile.Features.Scanning;
 using TailwindTraders.Mobile.Features.Scanning.Photo;
 using Xamarin.Forms;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 namespace TailwindTraders.Mobile.Droid
 {
@@ -39,6 +42,8 @@ namespace TailwindTraders.Mobile.Droid
             InitTensorflowService();
 
             LoadApplication(new App());
+
+            AppCenter.Start("024c4e8b-b7f6-4263-a8ec-9dc0630d9a24", typeof(Analytics), typeof(Crashes));
         }
 
         public override void OnRequestPermissionsResult(
